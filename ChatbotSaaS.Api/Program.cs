@@ -1,4 +1,6 @@
+using ChatbotSaaS.Application.Abstractions;
 using ChatbotSaaS.Infrastructure.Persistence;
+using ChatbotSaaS.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +12,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseNpgsql(builder.Configuration.GetConnectionString("Default"));
 });
-
+builder.Services.AddScoped<IChatService, ChatService>();
 builder.Services.AddHttpClient();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
