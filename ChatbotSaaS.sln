@@ -3,7 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35919.96 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatbotSaaS.Api", "ChatbotSaaS.Api\ChatbotSaaS.Api.csproj", "{489B0C67-F8B4-49F0-9CC5-BA3A7CB4E30B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatbotSaaS.Domain", "ChatbotSaaS.Domain\ChatbotSaaS.Domain.csproj", "{1D99AF45-1CAD-43B9-BD39-2096228DE480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatbotSaaS.Application", "ChatbotSaaS.Application\ChatbotSaaS.Application.csproj", "{30462184-2D62-4015-A904-3E2C44127751}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatbotSaaS.Infrastructure", "ChatbotSaaS.Infrastructure\ChatbotSaaS.Infrastructure.csproj", "{3AC38456-528D-4B46-AFD3-9E9F03EF06C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Çözüm Öğeleri", "Çözüm Öğeleri", "{AC80F682-3D55-C8F8-4895-A4A9EDD49434}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{489B0C67-F8B4-49F0-9CC5-BA3A7CB4E30B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489B0C67-F8B4-49F0-9CC5-BA3A7CB4E30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489B0C67-F8B4-49F0-9CC5-BA3A7CB4E30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489B0C67-F8B4-49F0-9CC5-BA3A7CB4E30B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D99AF45-1CAD-43B9-BD39-2096228DE480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D99AF45-1CAD-43B9-BD39-2096228DE480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D99AF45-1CAD-43B9-BD39-2096228DE480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D99AF45-1CAD-43B9-BD39-2096228DE480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30462184-2D62-4015-A904-3E2C44127751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30462184-2D62-4015-A904-3E2C44127751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30462184-2D62-4015-A904-3E2C44127751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30462184-2D62-4015-A904-3E2C44127751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AC38456-528D-4B46-AFD3-9E9F03EF06C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC38456-528D-4B46-AFD3-9E9F03EF06C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC38456-528D-4B46-AFD3-9E9F03EF06C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC38456-528D-4B46-AFD3-9E9F03EF06C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
