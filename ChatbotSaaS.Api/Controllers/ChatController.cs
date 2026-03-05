@@ -20,7 +20,7 @@ namespace ChatbotSaaS.Api.Controllers
             string tenantKey,
             string botKey,
             string sessionId,
-            [FromBody] SendMessageRequest request,
+             SendMessageRequest request,
             CancellationToken ct)
         {
             var result = await _chatService.SendMessageAsync(
