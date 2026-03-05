@@ -38,7 +38,7 @@ namespace ChatbotSaaS.Api.Controllers
             string tenantKey,
             string botKey,
             string sessionId,
-            [FromQuery] int takeLast = 50,
+            int takeLast = 50,
             CancellationToken ct = default)
         {
             var result = await _chatService.GetConversationAsync(
