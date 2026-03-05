@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace ChatbotSaaS.Application.DTOs.Chat
 {
-    internal class LlmMessage
-    {
-    }
+    public record LlmMessage(MessageRole Role, string Text);
 }

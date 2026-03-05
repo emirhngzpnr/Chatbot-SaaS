@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ChatbotSaaS.Application.DTOs.Chat
 {
-    internal class LlmChatResult
-    {
-    }
+    public record LlmChatResult(
+     string Text,
+     int? TokensIn,
+     int? TokensOut);
 }
